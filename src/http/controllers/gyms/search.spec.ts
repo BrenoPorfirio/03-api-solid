@@ -15,7 +15,7 @@ describe('Search Gyms (e2e)', () => {
 
     await request(app.server)
       .get('/gyms')
-      .set('/Authorization', `Bearer ${token}`)
+      .set('Authorization', `Bearer ${token}`)
       .send({
         title: 'Javascript Gym',
         description: 'Some description',
@@ -26,7 +26,7 @@ describe('Search Gyms (e2e)', () => {
 
     await request(app.server)
       .get('/gyms')
-      .set('/Authorization', `Bearer ${token}`)
+      .set('Authorization', `Bearer ${token}`)
       .send({
         title: 'Typescript Gym',
         description: 'Some description',
